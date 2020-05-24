@@ -1,0 +1,7 @@
+C:\Users\komp2\Documents\GitHub\WFC-basic_clinet_and_server\ProjectSever\bin\Debug\ProjectSever.dll.config
+C:\Users\komp2\Documents\GitHub\WFC-basic_clinet_and_server\ProjectSever\bin\Debug\ProjectSever.dll
+C:\Users\komp2\Documents\GitHub\WFC-basic_clinet_and_server\ProjectSever\bin\Debug\ProjectSever.pdb
+C:\Users\komp2\Documents\GitHub\WFC-basic_clinet_and_server\ProjectSever\obj\Debug\ProjectServer.csproj.CoreCompileInputs.cache
+C:\Users\komp2\Documents\GitHub\WFC-basic_clinet_and_server\ProjectSever\obj\Debug\ProjectSever.dll
+C:\Users\komp2\Documents\GitHub\WFC-basic_clinet_and_server\ProjectSever\obj\Debug\ProjectSever.pdb
+C:\Users\komp2\Documents\GitHub\WFC-basic_clinet_and_server\ProjectSever\obj\Debug\ProjectServer.csprojAssemblyReference.cache

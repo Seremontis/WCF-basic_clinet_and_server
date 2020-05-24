@@ -1,0 +1,22 @@
+﻿<Window x:Class="ProjectClient.View.WindowSave"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjectClient.View"
+        mc:Ignorable="d"
+        Title="SaveOnServer" Height="250" Width="350">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Content="Zapisz jako:" Grid.Row="0" Grid.Column="0"/>
+        <TextBox x:Name="NameDataTxtbox" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" Style="{StaticResource TxtboxResize}"/>
+        <Button x:Name="Confirm" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Content="Zapisz" Click="Confirm_Click" Style="{StaticResource ButtonMediumSize}"/>
+    </Grid>
+</Window>

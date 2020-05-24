@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="ReadFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="request" type="tns:ReadFileRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ReadFileRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="NameFile" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ReadFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="ReadFileResult" type="tns:ReadFileResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ReadFileResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Result">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+            <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SaveFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="table">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="SaveFileResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListName">
+    <xs:complexType />
+  </xs:element>
+  <xs:element name="GetListNameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetListNameResult" type="tns:ListNamesResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ListNamesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="ListNames" type="tns:ArrayOfString" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfString">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetSummary">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="request" type="tns:SummaryDataRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="SummaryDataRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="FileName" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="ColumnName" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="GroupColumnName" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Operation" type="tns:OperationOnTable" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="OperationOnTable">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="SUM" />
+      <xs:enumeration value="AVG" />
+      <xs:enumeration value="COUNT" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="GetSummaryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetSummaryResult" type="tns:SummaryDataResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="SummaryDataResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="FileName" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="ColumnName" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Operation" type="tns:OperationOnTable" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Value" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" maxOccurs="1" name="ListValue" type="tns:ArrayOfGroupByList" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfGroupByList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GroupByList" type="tns:GroupByList" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GroupByList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Result" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="request" type="tns:FileTransferRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="FileTransferRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="FileName" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="FileType" type="tns:FileType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="FileType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="XML" />
+      <xs:enumeration value="CSV" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="GetFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetFileResult" type="tns:FileTransferResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="FileTransferResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="NameFile" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="File" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

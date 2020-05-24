@@ -1,0 +1,31 @@
+﻿<local:BaseWindow x:Class="ProjectClient.View.DownloadFile"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjectClient"
+        mc:Ignorable="d"
+        Title="Zapisz plik" Height="400" Width="400" Closed="BaseWindow_Closed">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Content="Wybierz plik:" Grid.Row="0" Grid.Column="0"/>
+        <ComboBox Name="AvailableFileCombobox" Grid.Row="0" Grid.Column="1" Style="{StaticResource SaveComboBoxCenterLeft}"/>
+        <Label Content="Zapisz do:" Grid.Row="1" Grid.Column="0"/>
+        <StackPanel Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" Orientation="Horizontal">
+            <TextBox x:Name="PathTxtbox" MinWidth="130" IsEnabled="False" />
+            <Button x:Name="SelectPathBut" Content="..." Width="20" Click="SelectPathBut_Click"/>
+        </StackPanel>
+        <Label Content="Format zapisu:" Grid.Row="2" Grid.Column="0"/>
+        <ComboBox Name="TypeFileCombobox" Grid.Row="2" Grid.Column="1" Style="{StaticResource SaveComboBoxCenterLeft}"/>
+        <Button x:Name="ConfirmBut" Content="Pobierz" Style="{StaticResource ButtonMediumSize}" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Click="ConfirmBut_Click"/>
+    </Grid>
+</local:BaseWindow>

@@ -1,0 +1,11 @@
+C:\Users\komp2\Documents\GitHub\WFC-basic_clinet_and_server\Server_Host\bin\Debug\Server_Host.exe.config
+C:\Users\komp2\Documents\GitHub\WFC-basic_clinet_and_server\Server_Host\bin\Debug\Server_Host.exe
+C:\Users\komp2\Documents\GitHub\WFC-basic_clinet_and_server\Server_Host\bin\Debug\Server_Host.pdb
+C:\Users\komp2\Documents\GitHub\WFC-basic_clinet_and_server\Server_Host\bin\Debug\ProjectSever.dll
+C:\Users\komp2\Documents\GitHub\WFC-basic_clinet_and_server\Server_Host\bin\Debug\ProjectSever.pdb
+C:\Users\komp2\Documents\GitHub\WFC-basic_clinet_and_server\Server_Host\bin\Debug\ProjectSever.dll.config
+C:\Users\komp2\Documents\GitHub\WFC-basic_clinet_and_server\Server_Host\obj\Debug\Server_Host.csprojAssemblyReference.cache
+C:\Users\komp2\Documents\GitHub\WFC-basic_clinet_and_server\Server_Host\obj\Debug\Server_Host.csproj.CoreCompileInputs.cache
+C:\Users\komp2\Documents\GitHub\WFC-basic_clinet_and_server\Server_Host\obj\Debug\Server_Host.csproj.CopyComplete
+C:\Users\komp2\Documents\GitHub\WFC-basic_clinet_and_server\Server_Host\obj\Debug\Server_Host.exe
+C:\Users\komp2\Documents\GitHub\WFC-basic_clinet_and_server\Server_Host\obj\Debug\Server_Host.pdb
