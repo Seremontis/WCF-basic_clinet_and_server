@@ -8,9 +8,9 @@ using System.Windows;
 // zestaw atrybutów. Zmień wartości tych atrybutów, aby zmodyfikować informacje
 // powiązane z zestawem.
 [assembly: AssemblyTitle("ProjectClient")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Klient dla mini serwera bazodanowego")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Karol Ścigała")]
 [assembly: AssemblyProduct("ProjectClient")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProjectClient.View"
         mc:Ignorable="d"
-        Title="SaveOnServer" Height="250" Width="350">
+        Title="Zapisz na serwerze" Height="250" Width="350">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>

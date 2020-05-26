@@ -1,6 +1,6 @@
 ﻿using ProjectSever.DTO;
 using ProjectSever.Enums;
-using ProjectSever.Messages;
+using ProjectSever.Contracts;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -25,6 +25,7 @@ namespace ProjectSever
 
         public static FileTransferResponse PreapreToSend(string path)
         {
+            path+= ".xml";
             using (FileStream fs = new FileStream(path, FileMode.Open, FileAccess.Read))
             {
                 byte[] bytes = System.IO.File.ReadAllBytes(path);

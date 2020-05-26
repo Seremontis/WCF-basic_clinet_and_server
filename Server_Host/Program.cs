@@ -7,7 +7,7 @@ namespace Server_Host
     {
         static void Main(string[] args)
         {
-            ServiceHost host = new ServiceHost(typeof(ProjectSever.ServiceImplementations.SimpleInfo));
+            ServiceHost host = new ServiceHost(typeof(ProjectSever.ServiceImplementations.MiniDB));
             host.Open();
             Console.WriteLine("Serwer uruchomiony");
             Console.ReadKey();

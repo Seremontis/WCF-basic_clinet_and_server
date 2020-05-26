@@ -3,7 +3,7 @@ using ProjectSever.Enums;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 
-namespace ProjectSever.Messages
+namespace ProjectSever.Contracts
 {
     [DataContract]
     public class SummaryDataResponse

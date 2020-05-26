@@ -1,7 +1,7 @@
 ﻿using ProjectSever.DTO;
 using ProjectSever.Enums;
-using ProjectSever.Messages;
-using ProjectSever.ServiceContracts;
+using ProjectSever.Contracts;
+using ProjectSever.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -9,12 +9,12 @@ using System.IO;
 
 namespace ProjectSever.ServiceImplementations
 {
-    public class SimpleInfo : ISimpleInfo
+    public class MiniDB : IMiniDB
     {
         #region ctor and fields
         readonly string DirectoryPath;
 
-        public SimpleInfo()
+        public MiniDB()
         {
             DirectoryPath = Directory.GetCurrentDirectory() + "\\";
         }

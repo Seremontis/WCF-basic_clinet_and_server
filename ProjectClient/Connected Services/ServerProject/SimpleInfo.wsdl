@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SimpleInfo" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
-  <wsp:Policy wsu:Id="WSHttpBinding_ISimpleInfo_policy">
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="MiniDB" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="WSHttpBinding_IMiniDB_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SymmetricBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -96,7 +96,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSHttpBinding_ISimpleInfo_ReadFile_Input_policy">
+  <wsp:Policy wsu:Id="WSHttpBinding_IMiniDB_ReadFile_Input_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -115,7 +115,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSHttpBinding_ISimpleInfo_ReadFile_output_policy">
+  <wsp:Policy wsu:Id="WSHttpBinding_IMiniDB_ReadFile_output_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -134,7 +134,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSHttpBinding_ISimpleInfo_SaveFile_Input_policy">
+  <wsp:Policy wsu:Id="WSHttpBinding_IMiniDB_SaveFile_Input_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -153,7 +153,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSHttpBinding_ISimpleInfo_SaveFile_output_policy">
+  <wsp:Policy wsu:Id="WSHttpBinding_IMiniDB_SaveFile_output_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -172,7 +172,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSHttpBinding_ISimpleInfo_GetListName_Input_policy">
+  <wsp:Policy wsu:Id="WSHttpBinding_IMiniDB_GetListName_Input_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -191,7 +191,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSHttpBinding_ISimpleInfo_GetListName_output_policy">
+  <wsp:Policy wsu:Id="WSHttpBinding_IMiniDB_GetListName_output_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -210,7 +210,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSHttpBinding_ISimpleInfo_GetSummary_Input_policy">
+  <wsp:Policy wsu:Id="WSHttpBinding_IMiniDB_GetSummary_Input_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -229,7 +229,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSHttpBinding_ISimpleInfo_GetSummary_output_policy">
+  <wsp:Policy wsu:Id="WSHttpBinding_IMiniDB_GetSummary_output_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -248,7 +248,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSHttpBinding_ISimpleInfo_GetFile_Input_policy">
+  <wsp:Policy wsu:Id="WSHttpBinding_IMiniDB_GetFile_Input_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -267,7 +267,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSHttpBinding_ISimpleInfo_GetFile_output_policy">
+  <wsp:Policy wsu:Id="WSHttpBinding_IMiniDB_GetFile_output_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -291,62 +291,62 @@
       <xsd:import schemaLocation="http://localhost:2333/?xsd=xsd0" namespace="http://tempuri.org/" />
     </xsd:schema>
   </wsdl:types>
-  <wsdl:message name="ISimpleInfo_ReadFile_InputMessage">
+  <wsdl:message name="IMiniDB_ReadFile_InputMessage">
     <wsdl:part name="parameters" element="tns:ReadFile" />
   </wsdl:message>
-  <wsdl:message name="ISimpleInfo_ReadFile_OutputMessage">
+  <wsdl:message name="IMiniDB_ReadFile_OutputMessage">
     <wsdl:part name="parameters" element="tns:ReadFileResponse" />
   </wsdl:message>
-  <wsdl:message name="ISimpleInfo_SaveFile_InputMessage">
+  <wsdl:message name="IMiniDB_SaveFile_InputMessage">
     <wsdl:part name="parameters" element="tns:SaveFile" />
   </wsdl:message>
-  <wsdl:message name="ISimpleInfo_SaveFile_OutputMessage">
+  <wsdl:message name="IMiniDB_SaveFile_OutputMessage">
     <wsdl:part name="parameters" element="tns:SaveFileResponse" />
   </wsdl:message>
-  <wsdl:message name="ISimpleInfo_GetListName_InputMessage">
+  <wsdl:message name="IMiniDB_GetListName_InputMessage">
     <wsdl:part name="parameters" element="tns:GetListName" />
   </wsdl:message>
-  <wsdl:message name="ISimpleInfo_GetListName_OutputMessage">
+  <wsdl:message name="IMiniDB_GetListName_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetListNameResponse" />
   </wsdl:message>
-  <wsdl:message name="ISimpleInfo_GetSummary_InputMessage">
+  <wsdl:message name="IMiniDB_GetSummary_InputMessage">
     <wsdl:part name="parameters" element="tns:GetSummary" />
   </wsdl:message>
-  <wsdl:message name="ISimpleInfo_GetSummary_OutputMessage">
+  <wsdl:message name="IMiniDB_GetSummary_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetSummaryResponse" />
   </wsdl:message>
-  <wsdl:message name="ISimpleInfo_GetFile_InputMessage">
+  <wsdl:message name="IMiniDB_GetFile_InputMessage">
     <wsdl:part name="parameters" element="tns:GetFile" />
   </wsdl:message>
-  <wsdl:message name="ISimpleInfo_GetFile_OutputMessage">
+  <wsdl:message name="IMiniDB_GetFile_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetFileResponse" />
   </wsdl:message>
-  <wsdl:portType name="ISimpleInfo">
+  <wsdl:portType name="IMiniDB">
     <wsdl:operation name="ReadFile">
-      <wsdl:input wsaw:Action="http://tempuri.org/ISimpleInfo/ReadFile" message="tns:ISimpleInfo_ReadFile_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/ISimpleInfo/ReadFileResponse" message="tns:ISimpleInfo_ReadFile_OutputMessage" />
+      <wsdl:input wsaw:Action="http://tempuri.org/IMiniDB/ReadFile" message="tns:IMiniDB_ReadFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMiniDB/ReadFileResponse" message="tns:IMiniDB_ReadFile_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="SaveFile">
-      <wsdl:input wsaw:Action="http://tempuri.org/ISimpleInfo/SaveFile" message="tns:ISimpleInfo_SaveFile_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/ISimpleInfo/SaveFileResponse" message="tns:ISimpleInfo_SaveFile_OutputMessage" />
+      <wsdl:input wsaw:Action="http://tempuri.org/IMiniDB/SaveFile" message="tns:IMiniDB_SaveFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMiniDB/SaveFileResponse" message="tns:IMiniDB_SaveFile_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetListName">
-      <wsdl:input wsaw:Action="http://tempuri.org/ISimpleInfo/GetListName" message="tns:ISimpleInfo_GetListName_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/ISimpleInfo/GetListNameResponse" message="tns:ISimpleInfo_GetListName_OutputMessage" />
+      <wsdl:input wsaw:Action="http://tempuri.org/IMiniDB/GetListName" message="tns:IMiniDB_GetListName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMiniDB/GetListNameResponse" message="tns:IMiniDB_GetListName_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetSummary">
-      <wsdl:input wsaw:Action="http://tempuri.org/ISimpleInfo/GetSummary" message="tns:ISimpleInfo_GetSummary_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/ISimpleInfo/GetSummaryResponse" message="tns:ISimpleInfo_GetSummary_OutputMessage" />
+      <wsdl:input wsaw:Action="http://tempuri.org/IMiniDB/GetSummary" message="tns:IMiniDB_GetSummary_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMiniDB/GetSummaryResponse" message="tns:IMiniDB_GetSummary_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetFile">
-      <wsdl:input wsaw:Action="http://tempuri.org/ISimpleInfo/GetFile" message="tns:ISimpleInfo_GetFile_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/ISimpleInfo/GetFileResponse" message="tns:ISimpleInfo_GetFile_OutputMessage" />
+      <wsdl:input wsaw:Action="http://tempuri.org/IMiniDB/GetFile" message="tns:IMiniDB_GetFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMiniDB/GetFileResponse" message="tns:IMiniDB_GetFile_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
-  <wsdl:binding name="BasicHttpBinding_ISimpleInfo" type="tns:ISimpleInfo">
+  <wsdl:binding name="BasicHttpBinding_IMiniDB" type="tns:IMiniDB">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="ReadFile">
-      <soap:operation soapAction="http://tempuri.org/ISimpleInfo/ReadFile" style="document" />
+      <soap:operation soapAction="http://tempuri.org/IMiniDB/ReadFile" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -355,7 +355,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="SaveFile">
-      <soap:operation soapAction="http://tempuri.org/ISimpleInfo/SaveFile" style="document" />
+      <soap:operation soapAction="http://tempuri.org/IMiniDB/SaveFile" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -364,7 +364,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetListName">
-      <soap:operation soapAction="http://tempuri.org/ISimpleInfo/GetListName" style="document" />
+      <soap:operation soapAction="http://tempuri.org/IMiniDB/GetListName" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -373,7 +373,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetSummary">
-      <soap:operation soapAction="http://tempuri.org/ISimpleInfo/GetSummary" style="document" />
+      <soap:operation soapAction="http://tempuri.org/IMiniDB/GetSummary" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -382,7 +382,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetFile">
-      <soap:operation soapAction="http://tempuri.org/ISimpleInfo/GetFile" style="document" />
+      <soap:operation soapAction="http://tempuri.org/IMiniDB/GetFile" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -391,70 +391,70 @@
       </wsdl:output>
     </wsdl:operation>
   </wsdl:binding>
-  <wsdl:binding name="WSHttpBinding_ISimpleInfo" type="tns:ISimpleInfo">
-    <wsp:PolicyReference URI="#WSHttpBinding_ISimpleInfo_policy" />
+  <wsdl:binding name="WSHttpBinding_IMiniDB" type="tns:IMiniDB">
+    <wsp:PolicyReference URI="#WSHttpBinding_IMiniDB_policy" />
     <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="ReadFile">
-      <soap12:operation soapAction="http://tempuri.org/ISimpleInfo/ReadFile" style="document" />
+      <soap12:operation soapAction="http://tempuri.org/IMiniDB/ReadFile" style="document" />
       <wsdl:input>
-        <wsp:PolicyReference URI="#WSHttpBinding_ISimpleInfo_ReadFile_Input_policy" />
+        <wsp:PolicyReference URI="#WSHttpBinding_IMiniDB_ReadFile_Input_policy" />
         <soap12:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <wsp:PolicyReference URI="#WSHttpBinding_ISimpleInfo_ReadFile_output_policy" />
+        <wsp:PolicyReference URI="#WSHttpBinding_IMiniDB_ReadFile_output_policy" />
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="SaveFile">
-      <soap12:operation soapAction="http://tempuri.org/ISimpleInfo/SaveFile" style="document" />
+      <soap12:operation soapAction="http://tempuri.org/IMiniDB/SaveFile" style="document" />
       <wsdl:input>
-        <wsp:PolicyReference URI="#WSHttpBinding_ISimpleInfo_SaveFile_Input_policy" />
+        <wsp:PolicyReference URI="#WSHttpBinding_IMiniDB_SaveFile_Input_policy" />
         <soap12:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <wsp:PolicyReference URI="#WSHttpBinding_ISimpleInfo_SaveFile_output_policy" />
+        <wsp:PolicyReference URI="#WSHttpBinding_IMiniDB_SaveFile_output_policy" />
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetListName">
-      <soap12:operation soapAction="http://tempuri.org/ISimpleInfo/GetListName" style="document" />
+      <soap12:operation soapAction="http://tempuri.org/IMiniDB/GetListName" style="document" />
       <wsdl:input>
-        <wsp:PolicyReference URI="#WSHttpBinding_ISimpleInfo_GetListName_Input_policy" />
+        <wsp:PolicyReference URI="#WSHttpBinding_IMiniDB_GetListName_Input_policy" />
         <soap12:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <wsp:PolicyReference URI="#WSHttpBinding_ISimpleInfo_GetListName_output_policy" />
+        <wsp:PolicyReference URI="#WSHttpBinding_IMiniDB_GetListName_output_policy" />
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetSummary">
-      <soap12:operation soapAction="http://tempuri.org/ISimpleInfo/GetSummary" style="document" />
+      <soap12:operation soapAction="http://tempuri.org/IMiniDB/GetSummary" style="document" />
       <wsdl:input>
-        <wsp:PolicyReference URI="#WSHttpBinding_ISimpleInfo_GetSummary_Input_policy" />
+        <wsp:PolicyReference URI="#WSHttpBinding_IMiniDB_GetSummary_Input_policy" />
         <soap12:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <wsp:PolicyReference URI="#WSHttpBinding_ISimpleInfo_GetSummary_output_policy" />
+        <wsp:PolicyReference URI="#WSHttpBinding_IMiniDB_GetSummary_output_policy" />
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetFile">
-      <soap12:operation soapAction="http://tempuri.org/ISimpleInfo/GetFile" style="document" />
+      <soap12:operation soapAction="http://tempuri.org/IMiniDB/GetFile" style="document" />
       <wsdl:input>
-        <wsp:PolicyReference URI="#WSHttpBinding_ISimpleInfo_GetFile_Input_policy" />
+        <wsp:PolicyReference URI="#WSHttpBinding_IMiniDB_GetFile_Input_policy" />
         <soap12:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <wsp:PolicyReference URI="#WSHttpBinding_ISimpleInfo_GetFile_output_policy" />
+        <wsp:PolicyReference URI="#WSHttpBinding_IMiniDB_GetFile_output_policy" />
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
   </wsdl:binding>
-  <wsdl:service name="SimpleInfo">
-    <wsdl:port name="BasicHttpBinding_ISimpleInfo" binding="tns:BasicHttpBinding_ISimpleInfo">
+  <wsdl:service name="MiniDB">
+    <wsdl:port name="BasicHttpBinding_IMiniDB" binding="tns:BasicHttpBinding_IMiniDB">
       <soap:address location="http://localhost:2333/" />
     </wsdl:port>
-    <wsdl:port name="WSHttpBinding_ISimpleInfo" binding="tns:WSHttpBinding_ISimpleInfo">
+    <wsdl:port name="WSHttpBinding_IMiniDB" binding="tns:WSHttpBinding_IMiniDB">
       <soap12:address location="http://localhost:2333/wsh" />
       <wsa10:EndpointReference>
         <wsa10:Address>http://localhost:2333/wsh</wsa10:Address>

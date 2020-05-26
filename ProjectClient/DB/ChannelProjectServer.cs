@@ -11,8 +11,8 @@ namespace ProjectClient
     public class ChannelProjectServer
     {
         #region fields and getters
-        private ISimpleInfo proxy = null;
-        private ChannelFactory<ISimpleInfo> factory = null;
+        private IMiniDB proxy = null;
+        private ChannelFactory<IMiniDB> factory = null;
         public string ErroMessage { get; private set; } = string.Empty;
         #endregion
 
@@ -22,10 +22,10 @@ namespace ProjectClient
             ErroMessage = string.Empty;
             try
             {
-                Uri uri = new Uri("http://localhost:2333/");//SimpleInfoClient client =new SimpleInfoClient();
+                Uri uri = new Uri("http://localhost:2333/");
                 WebRequest wr = WebRequest.Create(uri);
                 wr.GetResponse();
-                factory = new ChannelFactory<ISimpleInfo>(new BasicHttpBinding(),
+                factory = new ChannelFactory<IMiniDB>(new BasicHttpBinding(),
                 new EndpointAddress(uri));
                 proxy = factory.CreateChannel();
                 return true;
@@ -36,6 +36,8 @@ namespace ProjectClient
                 return false;
             }
         }
+
+
         public List<string> GetNamesList()
         {
             var response = proxy.GetListName();

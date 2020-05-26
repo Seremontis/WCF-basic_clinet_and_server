@@ -1,4 +1,4 @@
-﻿namespace ProjectSever.Messages
+﻿namespace ProjectSever.Contracts
 {
     public class FileTransferResponse
     {

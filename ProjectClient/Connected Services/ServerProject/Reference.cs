@@ -13,42 +13,42 @@ namespace ProjectClient.ServerProject {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServerProject.ISimpleInfo")]
-    public interface ISimpleInfo {
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServerProject.IMiniDB")]
+    public interface IMiniDB {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISimpleInfo/ReadFile", ReplyAction="http://tempuri.org/ISimpleInfo/ReadFileResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMiniDB/ReadFile", ReplyAction="http://tempuri.org/IMiniDB/ReadFileResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         ProjectClient.ServerProject.ReadFileResponse ReadFile(ProjectClient.ServerProject.ReadFileRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISimpleInfo/ReadFile", ReplyAction="http://tempuri.org/ISimpleInfo/ReadFileResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMiniDB/ReadFile", ReplyAction="http://tempuri.org/IMiniDB/ReadFileResponse")]
         System.Threading.Tasks.Task<ProjectClient.ServerProject.ReadFileResponse> ReadFileAsync(ProjectClient.ServerProject.ReadFileRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISimpleInfo/SaveFile", ReplyAction="http://tempuri.org/ISimpleInfo/SaveFileResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMiniDB/SaveFile", ReplyAction="http://tempuri.org/IMiniDB/SaveFileResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         bool SaveFile(System.Data.DataTable table);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISimpleInfo/SaveFile", ReplyAction="http://tempuri.org/ISimpleInfo/SaveFileResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMiniDB/SaveFile", ReplyAction="http://tempuri.org/IMiniDB/SaveFileResponse")]
         System.Threading.Tasks.Task<bool> SaveFileAsync(System.Data.DataTable table);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISimpleInfo/GetListName", ReplyAction="http://tempuri.org/ISimpleInfo/GetListNameResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMiniDB/GetListName", ReplyAction="http://tempuri.org/IMiniDB/GetListNameResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         ProjectClient.ServerProject.ListNamesResponse GetListName();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISimpleInfo/GetListName", ReplyAction="http://tempuri.org/ISimpleInfo/GetListNameResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMiniDB/GetListName", ReplyAction="http://tempuri.org/IMiniDB/GetListNameResponse")]
         System.Threading.Tasks.Task<ProjectClient.ServerProject.ListNamesResponse> GetListNameAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISimpleInfo/GetSummary", ReplyAction="http://tempuri.org/ISimpleInfo/GetSummaryResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMiniDB/GetSummary", ReplyAction="http://tempuri.org/IMiniDB/GetSummaryResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         ProjectClient.ServerProject.SummaryDataResponse GetSummary(ProjectClient.ServerProject.SummaryDataRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISimpleInfo/GetSummary", ReplyAction="http://tempuri.org/ISimpleInfo/GetSummaryResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMiniDB/GetSummary", ReplyAction="http://tempuri.org/IMiniDB/GetSummaryResponse")]
         System.Threading.Tasks.Task<ProjectClient.ServerProject.SummaryDataResponse> GetSummaryAsync(ProjectClient.ServerProject.SummaryDataRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISimpleInfo/GetFile", ReplyAction="http://tempuri.org/ISimpleInfo/GetFileResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMiniDB/GetFile", ReplyAction="http://tempuri.org/IMiniDB/GetFileResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         ProjectClient.ServerProject.FileTransferResponse GetFile(ProjectClient.ServerProject.FileTransferRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISimpleInfo/GetFile", ReplyAction="http://tempuri.org/ISimpleInfo/GetFileResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMiniDB/GetFile", ReplyAction="http://tempuri.org/IMiniDB/GetFileResponse")]
         System.Threading.Tasks.Task<ProjectClient.ServerProject.FileTransferResponse> GetFileAsync(ProjectClient.ServerProject.FileTransferRequest request);
     }
     
@@ -479,29 +479,29 @@ namespace ProjectClient.ServerProject {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface ISimpleInfoChannel : ProjectClient.ServerProject.ISimpleInfo, System.ServiceModel.IClientChannel {
+    public interface IMiniDBChannel : ProjectClient.ServerProject.IMiniDB, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class SimpleInfoClient : System.ServiceModel.ClientBase<ProjectClient.ServerProject.ISimpleInfo>, ProjectClient.ServerProject.ISimpleInfo {
+    public partial class MiniDBClient : System.ServiceModel.ClientBase<ProjectClient.ServerProject.IMiniDB>, ProjectClient.ServerProject.IMiniDB {
         
-        public SimpleInfoClient() {
+        public MiniDBClient() {
         }
         
-        public SimpleInfoClient(string endpointConfigurationName) : 
+        public MiniDBClient(string endpointConfigurationName) : 
                 base(endpointConfigurationName) {
         }
         
-        public SimpleInfoClient(string endpointConfigurationName, string remoteAddress) : 
+        public MiniDBClient(string endpointConfigurationName, string remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public SimpleInfoClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public MiniDBClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public SimpleInfoClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public MiniDBClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
         }
         

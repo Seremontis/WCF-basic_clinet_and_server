@@ -57,16 +57,16 @@
     <Compile Include="Enums\FileType.cs" />
     <Compile Include="Enums\OperationOnTable.cs" />
     <Compile Include="Helpers.cs" />
-    <Compile Include="Messages\FileTransferRequest.cs" />
-    <Compile Include="Messages\FileTransferResponse.cs" />
-    <Compile Include="Messages\ReadFileRequest.cs" />
-    <Compile Include="Messages\ReadFileResponse.cs" />
-    <Compile Include="Messages\ListNamesResponse.cs" />
-    <Compile Include="Messages\SummaryDataRequest.cs" />
-    <Compile Include="Messages\SummaryDataResponse.cs" />
+    <Compile Include="Contracts\FileTransferRequest.cs" />
+    <Compile Include="Contracts\FileTransferResponse.cs" />
+    <Compile Include="Contracts\ReadFileRequest.cs" />
+    <Compile Include="Contracts\ReadFileResponse.cs" />
+    <Compile Include="Contracts\ListNamesResponse.cs" />
+    <Compile Include="Contracts\SummaryDataRequest.cs" />
+    <Compile Include="Contracts\SummaryDataResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ServiceContracts\ISimpleInfo.cs" />
-    <Compile Include="ServiceImplementations\SimpleInfo.cs" />
+    <Compile Include="Interfaces\IMiniDB.cs" />
+    <Compile Include="ServiceImplementations\MiniDB.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

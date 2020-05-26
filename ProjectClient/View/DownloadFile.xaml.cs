@@ -13,12 +13,12 @@ namespace ProjectClient.View
     {
         #region fields and contructor
         private SettingsDownload settings;
-        private bool _flaga;
         public SettingsDownload GetSettings { get => settings; }
-        public bool Flaga { get => _flaga; }
+        public bool Flaga { get; private set; }
         public DownloadFile(ChannelProjectServer server)
         {
             InitializeComponent();
+            Flaga = false;
             connector = server;
             AvailableFileCombobox.ItemsSource = connector.GetNamesList();
             foreach (var item in Enum.GetValues(typeof(FileType)))
@@ -51,40 +51,28 @@ namespace ProjectClient.View
 
         private void ConfirmBut_Click(object sender, RoutedEventArgs e)
         {
-            
-            if (settings.Storage == string.Empty)
+            if (AvailableFileCombobox.SelectedItem == null)
             {
-                MessageBox.Show("Proszę wybrać który plik pobrać (lokalny czy sewera)", "Uwaga");
-                _flaga = false;
+                MessageBox.Show("Proszę wybrać tabelę do pobrania", "Uwaga");
+                Flaga = false;
             }
             else
-                _flaga = true;
-
-            if (AvailableFileCombobox.IsEnabled)
             {
-                if (AvailableFileCombobox.SelectedItem == null)
-                {
-                    MessageBox.Show("Proszę wybrać tabelę do pobrania", "Uwaga");
-                    _flaga = false;
-                }
-                else
-                {
-                    settings.FileNameServer = AvailableFileCombobox.SelectedItem.ToString();
-                    _flaga = true;
-                }
+                settings.FileNameServer = AvailableFileCombobox.SelectedItem.ToString();
+                Flaga = true;
             }
             settings.TypeFile = (FileType)TypeFileCombobox.SelectedIndex;
-            settings.PathLocal = PathTxtbox.Text+"."+settings.TypeFile.ToString().ToLower();
-            
+            if (!string.IsNullOrEmpty(PathTxtbox.Text))
+                settings.PathLocal = PathTxtbox.Text + "." + settings.TypeFile.ToString().ToLower();
+            else
+            {
+                Flaga = false;
+                MessageBox.Show("Podaj ścieżkę zapisu");
+            }
 
-            if (_flaga)
+
+            if (Flaga)
                 this.Close();
-        }
-
-        private void BaseWindow_Closed(object sender, EventArgs e)
-        {
-            _flaga = false;
-            this.Close();
         }
         #endregion
     }

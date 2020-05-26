@@ -1,7 +1,7 @@
 ﻿using ProjectSever.Enums;
 using System.Runtime.Serialization;
 
-namespace ProjectSever.Messages
+namespace ProjectSever.Contracts
 {
     [DataContract]
     public class FileTransferRequest

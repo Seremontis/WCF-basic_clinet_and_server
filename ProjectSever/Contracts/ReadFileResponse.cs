@@ -1,7 +1,7 @@
 ﻿using System.Data;
 using System.Runtime.Serialization;
 
-namespace ProjectSever.Messages
+namespace ProjectSever.Contracts
 {
     [DataContract]
     public class ReadFileResponse

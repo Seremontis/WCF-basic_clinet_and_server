@@ -1,0 +1,170 @@
+<DocumentElement>
+  <test>
+    <Kod_x0020_portu>PLPLC</Kod_x0020_portu>
+    <Data_x0020_wyjścia>01.01.2008</Data_x0020_wyjścia>
+    <Godzina_x0020_wyjścia>09:00:00</Godzina_x0020_wyjścia>
+    <Kod_x0020_portu_x002C__x0020_do_x0020_którego_x0020_jednostka_x0020_wypłynęła>LTKLJ</Kod_x0020_portu_x002C__x0020_do_x0020_którego_x0020_jednostka_x0020_wypłynęła>
+    <Nazwa_x0020_statku>SORMOVSKIY 42</Nazwa_x0020_statku>
+    <Bandera>Russian Federation</Bandera>
+    <nr_x0020_IMO>7833119</nr_x0020_IMO>
+    <Sygnał_x0020_wywoławczy>UAKY</Sygnał_x0020_wywoławczy>
+    <Pojemność_x0020_brutto>2478</Pojemność_x0020_brutto>
+    <Długość>114.00</Długość>
+    <Agent>BARWIL AGENCIES POLAND</Agent>
+    <Nabrzeże_x0020__x0028_miejsce_x0020_zacumowania_x0029_>Police Port Barkowy</Nabrzeże_x0020__x0028_miejsce_x0020_zacumowania_x0029_>
+  </test>
+  <test>
+    <Kod_x0020_portu>PLPLC</Kod_x0020_portu>
+    <Data_x0020_wyjścia>05.01.2008</Data_x0020_wyjścia>
+    <Godzina_x0020_wyjścia>06:00:00</Godzina_x0020_wyjścia>
+    <Kod_x0020_portu_x002C__x0020_do_x0020_którego_x0020_jednostka_x0020_wypłynęła>RU888</Kod_x0020_portu_x002C__x0020_do_x0020_którego_x0020_jednostka_x0020_wypłynęła>
+    <Nazwa_x0020_statku>SORMOVSKIY 53</Nazwa_x0020_statku>
+    <Bandera>Russian Federation</Bandera>
+    <nr_x0020_IMO>8628133</nr_x0020_IMO>
+    <Sygnał_x0020_wywoławczy>UAKX</Sygnał_x0020_wywoławczy>
+    <Pojemność_x0020_brutto>2466</Pojemność_x0020_brutto>
+    <Długość>114.00</Długość>
+    <Agent>BARWIL AGENCIES POLAND</Agent>
+    <Nabrzeże_x0020__x0028_miejsce_x0020_zacumowania_x0029_>Police Port Barkowy</Nabrzeże_x0020__x0028_miejsce_x0020_zacumowania_x0029_>
+  </test>
+  <test>
+    <Kod_x0020_portu>PLPLC</Kod_x0020_portu>
+    <Data_x0020_wyjścia>06.01.2008</Data_x0020_wyjścia>
+    <Godzina_x0020_wyjścia>07:30:00</Godzina_x0020_wyjścia>
+    <Kod_x0020_portu_x002C__x0020_do_x0020_którego_x0020_jednostka_x0020_wypłynęła>LVRIX</Kod_x0020_portu_x002C__x0020_do_x0020_którego_x0020_jednostka_x0020_wypłynęła>
+    <Nazwa_x0020_statku>OKSYWIE</Nazwa_x0020_statku>
+    <Bandera>Liberia</Bandera>
+    <nr_x0020_IMO>8502547</nr_x0020_IMO>
+    <Sygnał_x0020_wywoławczy>A8DS8</Sygnał_x0020_wywoławczy>
+    <Pojemność_x0020_brutto>21460</Pojemność_x0020_brutto>
+    <Długość>195.27</Długość>
+    <Agent>POLSTEAM SHIPPING AGENCY Ltd.</Agent>
+    <Nabrzeże_x0020__x0028_miejsce_x0020_zacumowania_x0029_>Police Port Morski</Nabrzeże_x0020__x0028_miejsce_x0020_zacumowania_x0029_>
+  </test>
+  <test>
+    <Kod_x0020_portu>PLPLC</Kod_x0020_portu>
+    <Data_x0020_wyjścia>06.01.2008</Data_x0020_wyjścia>
+    <Godzina_x0020_wyjścia>20:30:00</Godzina_x0020_wyjścia>
+    <Kod_x0020_portu_x002C__x0020_do_x0020_którego_x0020_jednostka_x0020_wypłynęła>PLSZZ</Kod_x0020_portu_x002C__x0020_do_x0020_którego_x0020_jednostka_x0020_wypłynęła>
+    <Nazwa_x0020_statku>VOLGOBALT-204</Nazwa_x0020_statku>
+    <Bandera>Russian Federation</Bandera>
+    <nr_x0020_IMO>8230326</nr_x0020_IMO>
+    <Sygnał_x0020_wywoławczy>UHPC</Sygnał_x0020_wywoławczy>
+    <Pojemność_x0020_brutto>2457</Pojemność_x0020_brutto>
+    <Długość>113.90</Długość>
+    <Agent>KOSIOR SHIPPING COMPANY Sp. z o.o.</Agent>
+    <Nabrzeże_x0020__x0028_miejsce_x0020_zacumowania_x0029_>Port Barkowy</Nabrzeże_x0020__x0028_miejsce_x0020_zacumowania_x0029_>
+  </test>
+  <test>
+    <Kod_x0020_portu>PLPLC</Kod_x0020_portu>
+    <Data_x0020_wyjścia>07.01.2008</Data_x0020_wyjścia>
+    <Godzina_x0020_wyjścia>07:00:00</Godzina_x0020_wyjścia>
+    <Kod_x0020_portu_x002C__x0020_do_x0020_którego_x0020_jednostka_x0020_wypłynęła>BR888</Kod_x0020_portu_x002C__x0020_do_x0020_którego_x0020_jednostka_x0020_wypłynęła>
+    <Nazwa_x0020_statku>ANTHIA</Nazwa_x0020_statku>
+    <Bandera>Malta</Bandera>
+    <nr_x0020_IMO>9238674</nr_x0020_IMO>
+    <Sygnał_x0020_wywoławczy>9HBP7</Sygnał_x0020_wywoławczy>
+    <Pojemność_x0020_brutto>17784</Pojemność_x0020_brutto>
+    <Długość>169.00</Długość>
+    <Agent>KOSIOR SHIPPING COMPANY Sp. z o.o.</Agent>
+    <Nabrzeże_x0020__x0028_miejsce_x0020_zacumowania_x0029_>PORT MORSKI</Nabrzeże_x0020__x0028_miejsce_x0020_zacumowania_x0029_>
+  </test>
+  <test>
+    <Kod_x0020_portu>PLPLC</Kod_x0020_portu>
+    <Data_x0020_wyjścia>08.01.2008</Data_x0020_wyjścia>
+    <Godzina_x0020_wyjścia>07:00:00</Godzina_x0020_wyjścia>
+    <Kod_x0020_portu_x002C__x0020_do_x0020_którego_x0020_jednostka_x0020_wypłynęła>LTKLJ</Kod_x0020_portu_x002C__x0020_do_x0020_którego_x0020_jednostka_x0020_wypłynęła>
+    <Nazwa_x0020_statku>SORMOVSKIY 42</Nazwa_x0020_statku>
+    <Bandera>Russian Federation</Bandera>
+    <nr_x0020_IMO>7833119</nr_x0020_IMO>
+    <Sygnał_x0020_wywoławczy>UAKY</Sygnał_x0020_wywoławczy>
+    <Pojemność_x0020_brutto>2478</Pojemność_x0020_brutto>
+    <Długość>114.00</Długość>
+    <Agent>BARWIL AGENCIES POLAND</Agent>
+    <Nabrzeże_x0020__x0028_miejsce_x0020_zacumowania_x0029_>POlice Port Barkowy</Nabrzeże_x0020__x0028_miejsce_x0020_zacumowania_x0029_>
+  </test>
+  <test>
+    <Kod_x0020_portu>PLPLC</Kod_x0020_portu>
+    <Data_x0020_wyjścia>09.01.2008</Data_x0020_wyjścia>
+    <Godzina_x0020_wyjścia>21:30:00</Godzina_x0020_wyjścia>
+    <Kod_x0020_portu_x002C__x0020_do_x0020_którego_x0020_jednostka_x0020_wypłynęła>ITRAN</Kod_x0020_portu_x002C__x0020_do_x0020_którego_x0020_jednostka_x0020_wypłynęła>
+    <Nazwa_x0020_statku>DINTELBORG</Nazwa_x0020_statku>
+    <Bandera>Netherlands</Bandera>
+    <nr_x0020_IMO>9163685</nr_x0020_IMO>
+    <Sygnał_x0020_wywoławczy>PEAA</Sygnał_x0020_wywoławczy>
+    <Pojemność_x0020_brutto>6205</Pojemność_x0020_brutto>
+    <Długość>133.00</Długość>
+    <Agent>DAN SHIPPING &amp; TRADING Co. Ltd. </Agent>
+    <Nabrzeże_x0020__x0028_miejsce_x0020_zacumowania_x0029_>PORT MORSKI POLICE</Nabrzeże_x0020__x0028_miejsce_x0020_zacumowania_x0029_>
+  </test>
+  <test>
+    <Kod_x0020_portu>PLPLC</Kod_x0020_portu>
+    <Data_x0020_wyjścia>09.01.2008</Data_x0020_wyjścia>
+    <Godzina_x0020_wyjścia>21:30:00</Godzina_x0020_wyjścia>
+    <Kod_x0020_portu_x002C__x0020_do_x0020_którego_x0020_jednostka_x0020_wypłynęła>SENRK</Kod_x0020_portu_x002C__x0020_do_x0020_którego_x0020_jednostka_x0020_wypłynęła>
+    <Nazwa_x0020_statku>OMSKIY 140</Nazwa_x0020_statku>
+    <Bandera>Russian Federation</Bandera>
+    <nr_x0020_IMO>8867052</nr_x0020_IMO>
+    <Sygnał_x0020_wywoławczy>U A N X</Sygnał_x0020_wywoławczy>
+    <Pojemność_x0020_brutto>2470</Pojemność_x0020_brutto>
+    <Długość>108.36</Długość>
+    <Agent>KOSIOR SHIPPING COMPANY Sp. z o.o.</Agent>
+    <Nabrzeże_x0020__x0028_miejsce_x0020_zacumowania_x0029_>police port barkowy</Nabrzeże_x0020__x0028_miejsce_x0020_zacumowania_x0029_>
+  </test>
+  <test>
+    <Kod_x0020_portu>PLPLC</Kod_x0020_portu>
+    <Data_x0020_wyjścia>12.01.2008</Data_x0020_wyjścia>
+    <Godzina_x0020_wyjścia>02:00:00</Godzina_x0020_wyjścia>
+    <Kod_x0020_portu_x002C__x0020_do_x0020_którego_x0020_jednostka_x0020_wypłynęła>LVRIX</Kod_x0020_portu_x002C__x0020_do_x0020_którego_x0020_jednostka_x0020_wypłynęła>
+    <Nazwa_x0020_statku>SOTIRIA</Nazwa_x0020_statku>
+    <Bandera>Malta</Bandera>
+    <nr_x0020_IMO>7718242</nr_x0020_IMO>
+    <Sygnał_x0020_wywoławczy>9HIJ4</Sygnał_x0020_wywoławczy>
+    <Pojemność_x0020_brutto>13677</Pojemność_x0020_brutto>
+    <Długość>164.33</Długość>
+    <Agent>INTERAGENT Sp. z o.o.</Agent>
+    <Nabrzeże_x0020__x0028_miejsce_x0020_zacumowania_x0029_>POLICE PORT MORSKI</Nabrzeże_x0020__x0028_miejsce_x0020_zacumowania_x0029_>
+  </test>
+  <test>
+    <Kod_x0020_portu>PLPLC</Kod_x0020_portu>
+    <Data_x0020_wyjścia>13.01.2008</Data_x0020_wyjścia>
+    <Godzina_x0020_wyjścia>22:00:00</Godzina_x0020_wyjścia>
+    <Kod_x0020_portu_x002C__x0020_do_x0020_którego_x0020_jednostka_x0020_wypłynęła>LTKLJ</Kod_x0020_portu_x002C__x0020_do_x0020_którego_x0020_jednostka_x0020_wypłynęła>
+    <Nazwa_x0020_statku>SORMOVSKIY 42</Nazwa_x0020_statku>
+    <Bandera>Russian Federation</Bandera>
+    <nr_x0020_IMO>7833119</nr_x0020_IMO>
+    <Sygnał_x0020_wywoławczy>UAKY</Sygnał_x0020_wywoławczy>
+    <Pojemność_x0020_brutto>2478</Pojemność_x0020_brutto>
+    <Długość>114.00</Długość>
+    <Agent>BARWIL AGENCIES POLAND</Agent>
+    <Nabrzeże_x0020__x0028_miejsce_x0020_zacumowania_x0029_>Police Port Barkowy</Nabrzeże_x0020__x0028_miejsce_x0020_zacumowania_x0029_>
+  </test>
+  <test>
+    <Kod_x0020_portu>PLPLC</Kod_x0020_portu>
+    <Data_x0020_wyjścia>13.01.2008</Data_x0020_wyjścia>
+    <Godzina_x0020_wyjścia>10:00:00</Godzina_x0020_wyjścia>
+    <Kod_x0020_portu_x002C__x0020_do_x0020_którego_x0020_jednostka_x0020_wypłynęła>PLSWI</Kod_x0020_portu_x002C__x0020_do_x0020_którego_x0020_jednostka_x0020_wypłynęła>
+    <Nazwa_x0020_statku>PORONIEC</Nazwa_x0020_statku>
+    <Bandera>Poland</Bandera>
+    <nr_x0020_IMO>7641475</nr_x0020_IMO>
+    <Sygnał_x0020_wywoławczy>SQHS</Sygnał_x0020_wywoławczy>
+    <Pojemność_x0020_brutto>695</Pojemność_x0020_brutto>
+    <Długość>60.00</Długość>
+    <Agent>Ship-Service S.A.</Agent>
+    <Nabrzeże_x0020__x0028_miejsce_x0020_zacumowania_x0029_>port morski</Nabrzeże_x0020__x0028_miejsce_x0020_zacumowania_x0029_>
+  </test>
+  <test>
+    <Kod_x0020_portu>PLPLC</Kod_x0020_portu>
+    <Data_x0020_wyjścia>14.01.2008</Data_x0020_wyjścia>
+    <Godzina_x0020_wyjścia>13:45:00</Godzina_x0020_wyjścia>
+    <Kod_x0020_portu_x002C__x0020_do_x0020_którego_x0020_jednostka_x0020_wypłynęła>PTLIS</Kod_x0020_portu_x002C__x0020_do_x0020_którego_x0020_jednostka_x0020_wypłynęła>
+    <Nazwa_x0020_statku>GLOBAL HELIOS</Nazwa_x0020_statku>
+    <Bandera>Antigua and Barbuda</Bandera>
+    <nr_x0020_IMO>9349980</nr_x0020_IMO>
+    <Sygnał_x0020_wywoławczy>V2CZ7</Sygnał_x0020_wywoławczy>
+    <Pojemność_x0020_brutto>5164</Pojemność_x0020_brutto>
+    <Długość>119.95</Długość>
+    <Agent>KOSIOR SHIPPING COMPANY Sp. z o.o.</Agent>
+    <Nabrzeże_x0020__x0028_miejsce_x0020_zacumowania_x0029_>Police port Morski</Nabrzeże_x0020__x0028_miejsce_x0020_zacumowania_x0029_>
+  </test>
+</DocumentElement>

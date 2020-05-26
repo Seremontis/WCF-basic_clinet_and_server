@@ -1,11 +1,11 @@
-﻿using ProjectSever.Messages;
+﻿using ProjectSever.Contracts;
 using System.Data;
 using System.ServiceModel;
 
-namespace ProjectSever.ServiceContracts
+namespace ProjectSever.Interfaces
 {
     [ServiceContract]
-    public interface ISimpleInfo
+    public interface IMiniDB
     {
 
         [OperationContract]
